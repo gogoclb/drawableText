@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:background="@android:color/holo_green_light">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/a448c607d81e265ba313beef89e2a4c92"   />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img1"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Hello World!"/>
+    </RelativeLayout>
+
+
+    <com.hexin.android.view.DrawableTextView
+        android:id="@+id/drawableText"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        app:left_drawable="@mipmap/a448c607d81e265ba313beef89e2a4c92"
+        app:leftdrawable_width="50dp"
+        app:lefttdrawable_height="50dp"
+        android:gravity="center"
+        android:drawablePadding="10dp"
+        android:text="Hello World!"/>
+
+    <com.hexin.android.view.DrawableTextView
+        android:background="@android:color/holo_green_light"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        app:left_drawable="@mipmap/a448c607d81e265ba313beef89e2a4c92"
+        app:drawable_width="50dp"
+        app:drawable_height="50dp"
+        android:gravity="left|center_vertical"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:text="Hello World!"/>
+
+
+    <com.hexin.android.view.DrawableTextView
+        android:background="@android:color/holo_blue_bright"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:gravity="left|center_vertical"
+        android:text="Hello World!"
+
+        app:left_drawable="@mipmap/b60a7aa66f2197205420088828280c22"
+        app:drawable_width="50dp"
+        app:drawable_height="50dp"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+
+        app:right_drawable="@mipmap/triangle"
+        app:rightdrawable_width="15dp"
+        app:rightdrawable_height="15dp"
+        android:paddingRight="10dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="点击换图"/>
+
+</LinearLayout>
